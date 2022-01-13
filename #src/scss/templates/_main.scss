@@ -1,0 +1,67 @@
+.main {
+  &__main-block {
+    margin-top: rem(76);
+  }
+}
+.main-block {
+  &__container {
+  }
+  &__body {
+  }
+  &__info {
+    max-width: rem(600);
+  }
+  &__heading {
+    font-size: rem(50);
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: rem(30);
+    & span {
+      color: #ff6e30;
+    }
+  }
+  &__text {
+    font-size: rem(18);
+    line-height: 167%;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    max-width: rem(487);
+    margin-bottom: rem(60);
+  }
+  &__form {
+    padding: 8px 11.04px 8px 18.06px;
+    background: #283036;
+    border-radius: 15px;
+    max-width: 497.66px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__search {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    & img {
+      margin-right: 13px;
+      width: 24px;
+    }
+    width: 100%;
+    padding-right: 20px;
+  }
+  &__input {
+    background: #283036;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.38);
+    font-size: rem(14);
+    line-height: prc(21, 14);
+  }
+  &__button {
+    @include button(#ff6e30, none, #ffffff, #ff6e30);
+  }
+  &__icons {
+  }
+  &__image {
+  }
+}

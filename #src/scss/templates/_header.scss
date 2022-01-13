@@ -1,0 +1,75 @@
+.header {
+  &__container {
+  }
+  &__body {
+    padding: rem(26) 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+  }
+  &__buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(41);
+  }
+  &__login {
+    color: #a7aaac;
+    transition: 0.3s;
+    &:hover {
+      color: #ff6e30;
+    }
+  }
+  &__signUp {
+    @include button(#ff6e30, none, #fdf5ff, #ff6e30);
+  }
+}
+
+.logo {
+  &__img {
+    width: 38px;
+    margin-right: 12px;
+    img {
+      width: 100%;
+    }
+  }
+  &__label {
+    font-size: rem(22);
+    line-height: prc(33, 22);
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+.nav-header {
+  margin: 0px rem(60);
+  &__menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(38);
+    row-gap: rem(8);
+  }
+  &__item {
+    font-size: rem(16);
+    line-height: prc(24, 16);
+    color: rgba(255, 255, 255, 0.55);
+
+    transition: 0.3s;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
