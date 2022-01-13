@@ -303,6 +303,12 @@ body {
 }
 
 .main__main-block {
+  margin-bottom: 12.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-block__body {
   margin-top: 4.75rem;
 }
 
@@ -348,6 +354,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 6.875rem;
 }
 
 .main-block__search {
@@ -413,4 +420,30 @@ body {
 
 .main-block__button span {
   color: inherit;
+}
+
+.main-block__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  cursor: pointer;
+}
+
+.main-block__image {
+  position: absolute;
+  top: 43px;
+  right: 300px;
 }
